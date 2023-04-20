@@ -1,0 +1,114 @@
+SOLID PRINCIPLES
+
+It is an acronym 
+1 - S = Single Responsibilty Principle = says that a piece of code like a method or instance should only have one 
+responsibility , It should do one thing and do it very well .
+
+ex - one method is doing onlu addition , it should not doing multiplication and other work . 
+
+advantage = helps us easy in managaging 
+
+2- O = Open closed Principle 
+This principle states that objects , entities , classes should be open for extension but closed for modification .
+
+ex - if you create a class you should be able to extend it without needing to modify its original implemention.
+
+3 - L = List of substitution principle 
+Means that every class or derived class should be substituable for thier base or parent class . 
+
+ex - whatever you derive from another class it should be similar enough and net going to cause any conflicts as you extend the code 
+
+4 - I = Interface segregation Principle 
+all L and I kind of promotes the similar principles 
+It states that principle state that client should never be forced to implemenet methods or fucntionality that it 
+doesn't need 
+
+ex = try to write your code in such a way , in a modular way that if I need five methods so you can give me the 5 methods 
+that i need . I don't need to have the knowledge of 20 methods to only use 5 of them . 
+
+5 - D = Dependency Inversion Principle 
+It states that entities must depenend on abstraction and not implemenetations
+
+ex = code shouldn't necessarily have all the details of how something is done , it just need to know that something 
+is done .
+
+so first we start the segreation of concern and single resonsibilty principle . 
+
+
+DRY - Don't Repeat yourself 
+Less code repeation 
+easier to maintain and make changes 
+single responsibilty principle relies on dry 
+the opne and closed principle (O in solid ) works when dry is followed 
+Write code that doesn't have to be changed every time the requirements change 
+
+Understanding Clean Archieture 
+pros :
+-easier to deliver 
+-can be stable and a long term solution 
+
+cons:
+hard to enforce solid principles 
+harder to maintain as project grows
+-hARDER TO TEST 
+
+
+Layered Architecture 
+pros:
+Better enforcing solid principles 
+easier to maintian larger code 
+
+
+cons:
+layers are dependent 
+still acts as one application 
+
+
+THREE Layers are there:
+1 - Web Layer = (Controllers , handlers , filters , view templates , and so on )
+2 - Service Layer = (application service and infrastructure service )
+3 - Repositary Layer = (repository interfaces , and their implementions )
+
+Onion Archietecture
+Pros:
+1 - It provides better testability 
+2 - Easier to make changes 
+3 - promotes loose coupling 
+
+cons:
+Learning curve 
+Time consuming 
+
+
+AutoMapper :
+converts complex data type with ease 
+saves time spent on writing manual mapping code 
+might lead to performance and debugging
+
+
+
+CQRS :Command Query Responsibility Segregation 
+
+									|Application|
+									|			|
+									|			|
+		INFORMATION TO CLIENT--	>   |QUERY MODEL| --> Query data from database  (Read only DataBase)
+UI --> |							|			|
+	   User Makes change to data-->	|Command Model|--> Command Updates (Transactional Database )
+
+
+
+Mediator Pattern :
+mediator is a pakage that helps us to implement cqrs and the mediator pattern . 
+Mediator has to do with handling the relationships between requests and handlers without needing to define 
+any custom logic 
+
+
+Why validations are important ?
+
+they are important beacuse they help us to protect our data intergrity 
+
+
+
+
+

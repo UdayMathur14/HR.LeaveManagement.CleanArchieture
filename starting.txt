@@ -109,9 +109,6 @@ Why validations are important ?
 they are important beacuse they help us to protect our data intergrity 
 
 
-//Try tp ush some code
-
-
 
 
 
